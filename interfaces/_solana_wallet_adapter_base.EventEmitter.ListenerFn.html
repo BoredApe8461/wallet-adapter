@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>SolletWalletAdapterConfig | @solana/wallet-adapter</title>
+	<title>ListenerFn | @solana/wallet-adapter</title>
 	<meta name="description" content="Documentation for @solana/wallet-adapter">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,63 +55,59 @@
 					<a href="../modules.html">@solana/wallet-adapter</a>
 				</li>
 				<li>
-					<a href="../modules/_solana_wallet_adapter_sollet.html">@solana/wallet-adapter-sollet</a>
+					<a href="../modules/_solana_wallet_adapter_base.html">@solana/wallet-adapter-base</a>
 				</li>
 				<li>
-					<a href="_solana_wallet_adapter_sollet.SolletWalletAdapterConfig.html">SolletWalletAdapterConfig</a>
+					<a href="../modules/_solana_wallet_adapter_base.EventEmitter.html">EventEmitter</a>
+				</li>
+				<li>
+					<a href="_solana_wallet_adapter_base.EventEmitter.ListenerFn.html">ListenerFn</a>
 				</li>
 			</ul>
-			<h1>Interface SolletWalletAdapterConfig</h1>
+			<h1>Interface ListenerFn&lt;Args&gt;</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-type-parameters">
+				<h3>Type parameters</h3>
+				<ul class="tsd-type-parameters">
+					<li>
+						<h4>Args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span> = <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h4>
+					</li>
+				</ul>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">SolletWalletAdapterConfig</span>
+						<span class="target">ListenerFn</span>
 					</li>
 				</ul>
 			</section>
-			<section class="tsd-panel-group tsd-index-group">
-				<h2>Index</h2>
-				<section class="tsd-panel tsd-index-panel">
-					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
-							<h3>Properties</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_solana_wallet_adapter_sollet.SolletWalletAdapterConfig.html#network" class="tsd-kind-icon">network</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_solana_wallet_adapter_sollet.SolletWalletAdapterConfig.html#provider" class="tsd-kind-icon">provider</a></li>
+			<section class="tsd-panel">
+				<h3 class="tsd-before-signature">Callable</h3>
+				<ul class="tsd-signatures tsd-kind-interface tsd-parent-kind-namespace tsd-has-type-parameter tsd-is-external">
+					<li class="tsd-signature tsd-kind-icon">Listener<wbr>Fn<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Args</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in node_modules/eventemitter3/index.d.ts:84</li>
 							</ul>
-						</section>
-					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="network" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> network</h3>
-					<div class="tsd-signature tsd-kind-icon">network<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">WalletAdapterNetwork</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/solana-labs/wallet-adapter/blob/9311ee0/packages/sollet/src/adapter.ts#L18">packages/sollet/src/adapter.ts:18</a></li>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">Args</span></h5>
+							</li>
 						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="provider" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> provider</h3>
-					<div class="tsd-signature tsd-kind-icon">provider<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>postMessage<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/solana-labs/wallet-adapter/blob/9311ee0/packages/sollet/src/adapter.ts#L17">packages/sollet/src/adapter.ts:17</a></li>
-						</ul>
-					</aside>
-				</section>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+					</li>
+				</ul>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -120,8 +116,13 @@
 					<li class=" ">
 						<a href="../modules.html">Modules</a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class="current tsd-kind-module">
 						<a href="../modules/_solana_wallet_adapter_base.html">@solana/wallet-<wbr>adapter-<wbr>base</a>
+						<ul>
+							<li class="current tsd-kind-namespace tsd-parent-kind-module tsd-is-external">
+								<a href="../modules/_solana_wallet_adapter_base.EventEmitter.html">Event<wbr>Emitter</a>
+							</li>
+						</ul>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="../modules/_solana_wallet_adapter_ledger.html">@solana/wallet-<wbr>adapter-<wbr>ledger</a>
@@ -138,7 +139,7 @@
 					<li class=" tsd-kind-module">
 						<a href="../modules/_solana_wallet_adapter_react.html">@solana/wallet-<wbr>adapter-<wbr>react</a>
 					</li>
-					<li class="current tsd-kind-module">
+					<li class=" tsd-kind-module">
 						<a href="../modules/_solana_wallet_adapter_sollet.html">@solana/wallet-<wbr>adapter-<wbr>sollet</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -154,24 +155,34 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/_solana_wallet_adapter_sollet.SolletWalletAdapter.html" class="tsd-kind-icon">Sollet<wbr>Wallet<wbr>Adapter</a>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace tsd-is-external">
+						<a href="_solana_wallet_adapter_base.EventEmitter.EventEmitterStatic.html" class="tsd-kind-icon">Event<wbr>Emitter<wbr>Static</a>
 					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="_solana_wallet_adapter_sollet.SolletWalletAdapterConfig.html" class="tsd-kind-icon">Sollet<wbr>Wallet<wbr>Adapter<wbr>Config</a>
-						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_solana_wallet_adapter_sollet.SolletWalletAdapterConfig.html#network" class="tsd-kind-icon">network</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_solana_wallet_adapter_sollet.SolletWalletAdapterConfig.html#provider" class="tsd-kind-icon">provider</a>
-							</li>
-						</ul>
+					<li class="current tsd-kind-interface tsd-parent-kind-namespace tsd-has-type-parameter tsd-is-external">
+						<a href="_solana_wallet_adapter_base.EventEmitter.ListenerFn.html" class="tsd-kind-icon">Listener<wbr>Fn</a>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-type-alias tsd-parent-kind-namespace tsd-has-type-parameter tsd-is-external">
+						<a href="../modules/_solana_wallet_adapter_base.EventEmitter.html#ArgumentMap" class="tsd-kind-icon">Argument<wbr>Map</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-namespace tsd-has-type-parameter tsd-is-external">
+						<a href="../modules/_solana_wallet_adapter_base.EventEmitter.html#EventArgs" class="tsd-kind-icon">Event<wbr>Args</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-namespace tsd-has-type-parameter tsd-is-external">
+						<a href="../modules/_solana_wallet_adapter_base.EventEmitter.html#EventListener" class="tsd-kind-icon">Event<wbr>Listener</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-namespace tsd-has-type-parameter tsd-is-external">
+						<a href="../modules/_solana_wallet_adapter_base.EventEmitter.html#EventNames" class="tsd-kind-icon">Event<wbr>Names</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-namespace tsd-is-external">
+						<a href="../modules/_solana_wallet_adapter_base.EventEmitter.html#ValidEventTypes" class="tsd-kind-icon">Valid<wbr>Event<wbr>Types</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-namespace tsd-is-external">
+						<a href="../modules/_solana_wallet_adapter_base.EventEmitter.html#EventEmitter" class="tsd-kind-icon">Event<wbr>Emitter</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
@@ -187,11 +198,10 @@
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
