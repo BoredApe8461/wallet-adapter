@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Wallet | @solana/wallet-adapter</title>
+	<title>SolflareWalletAdapterConfig | @solana/wallet-adapter</title>
 	<meta name="description" content="Documentation for @solana/wallet-adapter">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,13 +55,13 @@
 					<a href="../modules.html">@solana/wallet-adapter</a>
 				</li>
 				<li>
-					<a href="../modules/_solana_wallet_adapter_wallets.html">@solana/wallet-adapter-wallets</a>
+					<a href="../modules/_solana_wallet_adapter_solflare.html">@solana/wallet-adapter-solflare</a>
 				</li>
 				<li>
-					<a href="_solana_wallet_adapter_wallets.Wallet.html">Wallet</a>
+					<a href="_solana_wallet_adapter_solflare.SolflareWalletAdapterConfig.html">SolflareWalletAdapterConfig</a>
 				</li>
 			</ul>
-			<h1>Interface Wallet</h1>
+			<h1>Interface SolflareWalletAdapterConfig</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">Wallet</span>
+						<span class="target">SolflareWalletAdapterConfig</span>
 					</li>
 				</ul>
 			</section>
@@ -83,15 +83,8 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_solana_wallet_adapter_wallets.Wallet.html#icon" class="tsd-kind-icon">icon</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_solana_wallet_adapter_wallets.Wallet.html#name" class="tsd-kind-icon">name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_solana_wallet_adapter_wallets.Wallet.html#url" class="tsd-kind-icon">url</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Methods</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_solana_wallet_adapter_wallets.Wallet.html#adapter" class="tsd-kind-icon">adapter</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_solana_wallet_adapter_solflare.SolflareWalletAdapterConfig.html#pollCount" class="tsd-kind-icon">poll<wbr>Count</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_solana_wallet_adapter_solflare.SolflareWalletAdapterConfig.html#pollInterval" class="tsd-kind-icon">poll<wbr>Interval</a></li>
 							</ul>
 						</section>
 					</div>
@@ -100,54 +93,24 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="icon" class="tsd-anchor"></a>
-					<h3>icon</h3>
-					<div class="tsd-signature tsd-kind-icon">icon<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="pollCount" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> poll<wbr>Count</h3>
+					<div class="tsd-signature tsd-kind-icon">poll<wbr>Count<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/solana-labs/wallet-adapter/blob/bdd9cbf/packages/wallets/src/wallets.ts#L24">packages/wallets/src/wallets.ts:24</a></li>
+							<li>Defined in <a href="https://github.com/solana-labs/wallet-adapter/blob/bdd9cbf/packages/solflare/src/adapter.ts#L43">packages/solflare/src/adapter.ts:43</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="name" class="tsd-anchor"></a>
-					<h3>name</h3>
-					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <a href="../enums/_solana_wallet_adapter_wallets.WalletName.html" class="tsd-signature-type" data-tsd-kind="Enumeration">WalletName</a></div>
+					<a name="pollInterval" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> poll<wbr>Interval</h3>
+					<div class="tsd-signature tsd-kind-icon">poll<wbr>Interval<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/solana-labs/wallet-adapter/blob/bdd9cbf/packages/wallets/src/wallets.ts#L22">packages/wallets/src/wallets.ts:22</a></li>
+							<li>Defined in <a href="https://github.com/solana-labs/wallet-adapter/blob/bdd9cbf/packages/solflare/src/adapter.ts#L42">packages/solflare/src/adapter.ts:42</a></li>
 						</ul>
 					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="url" class="tsd-anchor"></a>
-					<h3>url</h3>
-					<div class="tsd-signature tsd-kind-icon">url<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/solana-labs/wallet-adapter/blob/bdd9cbf/packages/wallets/src/wallets.ts#L23">packages/wallets/src/wallets.ts:23</a></li>
-						</ul>
-					</aside>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="adapter" class="tsd-anchor"></a>
-					<h3>adapter</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">adapter<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">WalletAdapter</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/solana-labs/wallet-adapter/blob/bdd9cbf/packages/wallets/src/wallets.ts#L25">packages/wallets/src/wallets.ts:25</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">WalletAdapter</span></h4>
-						</li>
-					</ul>
 				</section>
 			</section>
 		</div>
@@ -175,7 +138,7 @@
 					<li class=" tsd-kind-module">
 						<a href="../modules/_solana_wallet_adapter_react.html">@solana/wallet-<wbr>adapter-<wbr>react</a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class="current tsd-kind-module">
 						<a href="../modules/_solana_wallet_adapter_solflare.html">@solana/wallet-<wbr>adapter-<wbr>solflare</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -187,64 +150,31 @@
 					<li class=" tsd-kind-module">
 						<a href="../modules/_solana_wallet_adapter_torus.html">@solana/wallet-<wbr>adapter-<wbr>torus</a>
 					</li>
-					<li class="current tsd-kind-module">
+					<li class=" tsd-kind-module">
 						<a href="../modules/_solana_wallet_adapter_wallets.html">@solana/wallet-<wbr>adapter-<wbr>wallets</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-enum tsd-parent-kind-module">
-						<a href="../enums/_solana_wallet_adapter_wallets.WalletName.html" class="tsd-kind-icon">Wallet<wbr>Name</a>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/_solana_wallet_adapter_solflare.SolflareWalletAdapter.html" class="tsd-kind-icon">Solflare<wbr>Wallet<wbr>Adapter</a>
 					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="_solana_wallet_adapter_wallets.Wallet.html" class="tsd-kind-icon">Wallet</a>
+						<a href="_solana_wallet_adapter_solflare.SolflareWalletAdapterConfig.html" class="tsd-kind-icon">Solflare<wbr>Wallet<wbr>Adapter<wbr>Config</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_solana_wallet_adapter_wallets.Wallet.html#icon" class="tsd-kind-icon">icon</a>
+								<a href="_solana_wallet_adapter_solflare.SolflareWalletAdapterConfig.html#pollCount" class="tsd-kind-icon">poll<wbr>Count</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_solana_wallet_adapter_wallets.Wallet.html#name" class="tsd-kind-icon">name</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_solana_wallet_adapter_wallets.Wallet.html#url" class="tsd-kind-icon">url</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="_solana_wallet_adapter_wallets.Wallet.html#adapter" class="tsd-kind-icon">adapter</a>
+								<a href="_solana_wallet_adapter_solflare.SolflareWalletAdapterConfig.html#pollInterval" class="tsd-kind-icon">poll<wbr>Interval</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-variable tsd-parent-kind-module">
-						<a href="../modules/_solana_wallet_adapter_wallets.html#ICONS_URL" class="tsd-kind-icon">ICONS_<wbr>URL</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="../modules/_solana_wallet_adapter_wallets.html#getLedgerWallet" class="tsd-kind-icon">get<wbr>Ledger<wbr>Wallet</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="../modules/_solana_wallet_adapter_wallets.html#getMathWallet" class="tsd-kind-icon">get<wbr>Math<wbr>Wallet</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="../modules/_solana_wallet_adapter_wallets.html#getPhantomWallet" class="tsd-kind-icon">get<wbr>Phantom<wbr>Wallet</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="../modules/_solana_wallet_adapter_wallets.html#getSolflareWallet" class="tsd-kind-icon">get<wbr>Solflare<wbr>Wallet</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="../modules/_solana_wallet_adapter_wallets.html#getSolflareWebWallet" class="tsd-kind-icon">get<wbr>Solflare<wbr>Web<wbr>Wallet</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="../modules/_solana_wallet_adapter_wallets.html#getSolletWallet" class="tsd-kind-icon">get<wbr>Sollet<wbr>Wallet</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="../modules/_solana_wallet_adapter_wallets.html#getSolongWallet" class="tsd-kind-icon">get<wbr>Solong<wbr>Wallet</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="../modules/_solana_wallet_adapter_wallets.html#getTorusWallet" class="tsd-kind-icon">get<wbr>Torus<wbr>Wallet</a>
-					</li>
 				</ul>
 			</nav>
 		</div>
@@ -262,7 +192,6 @@
 			<ul class="tsd-legend">
 				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
