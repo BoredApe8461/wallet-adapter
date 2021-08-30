@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>WalletDialogContextState | @solana/wallet-adapter</title>
+	<title>WalletConnectWalletAdapterConfig | @solana/wallet-adapter</title>
 	<meta name="description" content="Documentation for @solana/wallet-adapter">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,13 +55,13 @@
 					<a href="../modules.html">@solana/wallet-adapter</a>
 				</li>
 				<li>
-					<a href="../modules/_solana_wallet_adapter_material_ui.html">@solana/wallet-adapter-material-ui</a>
+					<a href="../modules/_solana_wallet_adapter_walletconnect.html">@solana/wallet-adapter-walletconnect</a>
 				</li>
 				<li>
-					<a href="_solana_wallet_adapter_material_ui.WalletDialogContextState.html">WalletDialogContextState</a>
+					<a href="_solana_wallet_adapter_walletconnect.WalletConnectWalletAdapterConfig.html">WalletConnectWalletAdapterConfig</a>
 				</li>
 			</ul>
-			<h1>Interface WalletDialogContextState</h1>
+			<h1>Interface WalletConnectWalletAdapterConfig</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">WalletDialogContextState</span>
+						<span class="target">WalletConnectWalletAdapterConfig</span>
 					</li>
 				</ul>
 			</section>
@@ -83,13 +83,9 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_solana_wallet_adapter_material_ui.WalletDialogContextState.html#open" class="tsd-kind-icon">open</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Methods</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_solana_wallet_adapter_material_ui.WalletDialogContextState.html#setOpen" class="tsd-kind-icon">set<wbr>Open</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_solana_wallet_adapter_walletconnect.WalletConnectWalletAdapterConfig.html#chainId" class="tsd-kind-icon">chain<wbr>Id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_solana_wallet_adapter_walletconnect.WalletConnectWalletAdapterConfig.html#options" class="tsd-kind-icon">options</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_solana_wallet_adapter_walletconnect.WalletConnectWalletAdapterConfig.html#params" class="tsd-kind-icon">params</a></li>
 							</ul>
 						</section>
 					</div>
@@ -98,40 +94,34 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="open" class="tsd-anchor"></a>
-					<h3>open</h3>
-					<div class="tsd-signature tsd-kind-icon">open<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<a name="chainId" class="tsd-anchor"></a>
+					<h3>chain<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">chain<wbr>Id<span class="tsd-signature-symbol">:</span> <a href="../enums/_solana_wallet_adapter_walletconnect.WalletConnectChainID.html" class="tsd-signature-type" data-tsd-kind="Enumeration">WalletConnectChainID</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/solana-labs/wallet-adapter/blob/36c50b7/packages/material-ui/src/useWalletDialog.ts#L4">packages/material-ui/src/useWalletDialog.ts:4</a></li>
+							<li>Defined in <a href="https://github.com/solana-labs/wallet-adapter/blob/36c50b7/packages/walletconnect/src/adapter.ts#L27">packages/walletconnect/src/adapter.ts:27</a></li>
 						</ul>
 					</aside>
 				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="setOpen" class="tsd-anchor"></a>
-					<h3>set<wbr>Open</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>Open<span class="tsd-signature-symbol">(</span>open<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/solana-labs/wallet-adapter/blob/36c50b7/packages/material-ui/src/useWalletDialog.ts#L5">packages/material-ui/src/useWalletDialog.ts:5</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>open: <span class="tsd-signature-type">boolean</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="options" class="tsd-anchor"></a>
+					<h3>options</h3>
+					<div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ClientOptions</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/solana-labs/wallet-adapter/blob/36c50b7/packages/walletconnect/src/adapter.ts#L28">packages/walletconnect/src/adapter.ts:28</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="params" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> params</h3>
+					<div class="tsd-signature tsd-kind-icon">params<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ConnectParams</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/solana-labs/wallet-adapter/blob/36c50b7/packages/walletconnect/src/adapter.ts#L29">packages/walletconnect/src/adapter.ts:29</a></li>
+						</ul>
+					</aside>
 				</section>
 			</section>
 		</div>
@@ -156,7 +146,7 @@
 					<li class=" tsd-kind-module">
 						<a href="../modules/_solana_wallet_adapter_ledger.html">@solana/wallet-<wbr>adapter-<wbr>ledger</a>
 					</li>
-					<li class="current tsd-kind-module">
+					<li class=" tsd-kind-module">
 						<a href="../modules/_solana_wallet_adapter_material_ui.html">@solana/wallet-<wbr>adapter-<wbr>material-<wbr>ui</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -180,7 +170,7 @@
 					<li class=" tsd-kind-module">
 						<a href="../modules/_solana_wallet_adapter_torus.html">@solana/wallet-<wbr>adapter-<wbr>torus</a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class="current tsd-kind-module">
 						<a href="../modules/_solana_wallet_adapter_walletconnect.html">@solana/wallet-<wbr>adapter-<wbr>walletconnect</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -190,54 +180,33 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-enum tsd-parent-kind-module">
+						<a href="../enums/_solana_wallet_adapter_walletconnect.WalletConnectChainID.html" class="tsd-kind-icon">Wallet<wbr>Connect<wbr>ChainID</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-module">
+						<a href="../enums/_solana_wallet_adapter_walletconnect.WalletConnectRPCMethod.html" class="tsd-kind-icon">Wallet<wbr>ConnectRPCMethod</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/_solana_wallet_adapter_walletconnect.WalletConnectWalletAdapter.html" class="tsd-kind-icon">Wallet<wbr>Connect<wbr>Wallet<wbr>Adapter</a>
+					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="_solana_wallet_adapter_material_ui.WalletDialogContextState.html" class="tsd-kind-icon">Wallet<wbr>Dialog<wbr>Context<wbr>State</a>
+						<a href="_solana_wallet_adapter_walletconnect.WalletConnectWalletAdapterConfig.html" class="tsd-kind-icon">Wallet<wbr>Connect<wbr>Wallet<wbr>Adapter<wbr>Config</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_solana_wallet_adapter_material_ui.WalletDialogContextState.html#open" class="tsd-kind-icon">open</a>
+								<a href="_solana_wallet_adapter_walletconnect.WalletConnectWalletAdapterConfig.html#chainId" class="tsd-kind-icon">chain<wbr>Id</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="_solana_wallet_adapter_material_ui.WalletDialogContextState.html#setOpen" class="tsd-kind-icon">set<wbr>Open</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_solana_wallet_adapter_walletconnect.WalletConnectWalletAdapterConfig.html#options" class="tsd-kind-icon">options</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_solana_wallet_adapter_walletconnect.WalletConnectWalletAdapterConfig.html#params" class="tsd-kind-icon">params</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="_solana_wallet_adapter_material_ui.WalletDialogProps.html" class="tsd-kind-icon">Wallet<wbr>Dialog<wbr>Props</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="_solana_wallet_adapter_material_ui.WalletIconProps.html" class="tsd-kind-icon">Wallet<wbr>Icon<wbr>Props</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module">
-						<a href="../modules/_solana_wallet_adapter_material_ui.html#WalletConnectButton" class="tsd-kind-icon">Wallet<wbr>Connect<wbr>Button</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module">
-						<a href="../modules/_solana_wallet_adapter_material_ui.html#WalletDialog" class="tsd-kind-icon">Wallet<wbr>Dialog</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module">
-						<a href="../modules/_solana_wallet_adapter_material_ui.html#WalletDialogButton" class="tsd-kind-icon">Wallet<wbr>Dialog<wbr>Button</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module">
-						<a href="../modules/_solana_wallet_adapter_material_ui.html#WalletDialogContext" class="tsd-kind-icon">Wallet<wbr>Dialog<wbr>Context</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module">
-						<a href="../modules/_solana_wallet_adapter_material_ui.html#WalletDialogProvider" class="tsd-kind-icon">Wallet<wbr>Dialog<wbr>Provider</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module">
-						<a href="../modules/_solana_wallet_adapter_material_ui.html#WalletDisconnectButton" class="tsd-kind-icon">Wallet<wbr>Disconnect<wbr>Button</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module">
-						<a href="../modules/_solana_wallet_adapter_material_ui.html#WalletIcon" class="tsd-kind-icon">Wallet<wbr>Icon</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module">
-						<a href="../modules/_solana_wallet_adapter_material_ui.html#WalletMultiButton" class="tsd-kind-icon">Wallet<wbr>Multi<wbr>Button</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="../modules/_solana_wallet_adapter_material_ui.html#useWalletDialog" class="tsd-kind-icon">use<wbr>Wallet<wbr>Dialog</a>
-					</li>
 				</ul>
 			</nav>
 		</div>
@@ -256,7 +225,6 @@
 			<ul class="tsd-legend">
 				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
