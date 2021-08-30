@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>SignerWalletAdapterProps | @solana/wallet-adapter</title>
+	<title>MessageSignerWalletAdapterProps | @solana/wallet-adapter</title>
 	<meta name="description" content="Documentation for @solana/wallet-adapter">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -58,10 +58,10 @@
 					<a href="../modules/_solana_wallet_adapter_base.html">@solana/wallet-adapter-base</a>
 				</li>
 				<li>
-					<a href="_solana_wallet_adapter_base.SignerWalletAdapterProps.html">SignerWalletAdapterProps</a>
+					<a href="_solana_wallet_adapter_base.MessageSignerWalletAdapterProps.html">MessageSignerWalletAdapterProps</a>
 				</li>
 			</ul>
-			<h1>Interface SignerWalletAdapterProps</h1>
+			<h1>Interface MessageSignerWalletAdapterProps</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">SignerWalletAdapterProps</span>
+						<span class="target">MessageSignerWalletAdapterProps</span>
 					</li>
 				</ul>
 			</section>
@@ -83,8 +83,7 @@
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_solana_wallet_adapter_base.SignerWalletAdapterProps.html#signAllTransactions" class="tsd-kind-icon">sign<wbr>All<wbr>Transactions</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_solana_wallet_adapter_base.SignerWalletAdapterProps.html#signTransaction" class="tsd-kind-icon">sign<wbr>Transaction</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_solana_wallet_adapter_base.MessageSignerWalletAdapterProps.html#signMessage" class="tsd-kind-icon">sign<wbr>Message</a></li>
 							</ul>
 						</section>
 					</div>
@@ -93,48 +92,25 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="signAllTransactions" class="tsd-anchor"></a>
-					<h3>sign<wbr>All<wbr>Transactions</h3>
+					<a name="signMessage" class="tsd-anchor"></a>
+					<h3>sign<wbr>Message</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">sign<wbr>All<wbr>Transactions<span class="tsd-signature-symbol">(</span>transaction<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Transaction</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Transaction</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">sign<wbr>Message<span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uint8Array</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Uint8Array</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/solana-labs/wallet-adapter/blob/4e46f44/packages/base/src/signer.ts#L7">packages/base/src/signer.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/solana-labs/wallet-adapter/blob/4e46f44/packages/base/src/signer.ts#L47">packages/base/src/signer.ts:47</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>transaction: <span class="tsd-signature-type">Transaction</span><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>message: <span class="tsd-signature-type">Uint8Array</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Transaction</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="signTransaction" class="tsd-anchor"></a>
-					<h3>sign<wbr>Transaction</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">sign<wbr>Transaction<span class="tsd-signature-symbol">(</span>transaction<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Transaction</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Transaction</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/solana-labs/wallet-adapter/blob/4e46f44/packages/base/src/signer.ts#L6">packages/base/src/signer.ts:6</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>transaction: <span class="tsd-signature-type">Transaction</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Transaction</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Uint8Array</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -263,27 +239,24 @@
 					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="../classes/_solana_wallet_adapter_base.WalletWindowClosedError.html" class="tsd-kind-icon">Wallet<wbr>Window<wbr>Closed<wbr>Error</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="_solana_wallet_adapter_base.MessageSignerWalletAdapterProps.html" class="tsd-kind-icon">Message<wbr>Signer<wbr>Wallet<wbr>Adapter<wbr>Props</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="_solana_wallet_adapter_base.SendTransactionOptions.html" class="tsd-kind-icon">Send<wbr>Transaction<wbr>Options</a>
-					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="_solana_wallet_adapter_base.SignerWalletAdapterProps.html" class="tsd-kind-icon">Signer<wbr>Wallet<wbr>Adapter<wbr>Props</a>
+						<a href="_solana_wallet_adapter_base.MessageSignerWalletAdapterProps.html" class="tsd-kind-icon">Message<wbr>Signer<wbr>Wallet<wbr>Adapter<wbr>Props</a>
 						<ul>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="_solana_wallet_adapter_base.SignerWalletAdapterProps.html#signAllTransactions" class="tsd-kind-icon">sign<wbr>All<wbr>Transactions</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="_solana_wallet_adapter_base.SignerWalletAdapterProps.html#signTransaction" class="tsd-kind-icon">sign<wbr>Transaction</a>
+								<a href="_solana_wallet_adapter_base.MessageSignerWalletAdapterProps.html#signMessage" class="tsd-kind-icon">sign<wbr>Message</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="_solana_wallet_adapter_base.SendTransactionOptions.html" class="tsd-kind-icon">Send<wbr>Transaction<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="_solana_wallet_adapter_base.SignerWalletAdapterProps.html" class="tsd-kind-icon">Signer<wbr>Wallet<wbr>Adapter<wbr>Props</a>
+					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="_solana_wallet_adapter_base.WalletAdapterEvents.html" class="tsd-kind-icon">Wallet<wbr>Adapter<wbr>Events</a>
 					</li>
